@@ -1894,12 +1894,7 @@ if (/^https?:$/i.test(window.location.protocol)) {
           preview: publicPreview,
           original: publicPreview,
         };
-      }).slice(0, {
-        characters: 4,
-        scenes: 4,
-        props: 4,
-        stills: 6,
-      }[groupKey] || 6);
+      });
     });
   });
 
